@@ -23,4 +23,22 @@ section {
   align-items: center; /* Centra verticalmente */
   justify-content: center; /* Centra orizzontalmente */
   background-color: rgb(212, 212, 86);
+  box-shadow: inset 0 -10px 10px rgba(0, 0, 0, 0.5),
+    /* Ombra interna */ 0 0 15px rgba(0, 0, 0, 0.3);
+  transform: rotate(15deg);
+  animation: dropDown 2s ease-out forwards;
+}
+
+.Task2 {
+  background-color: rgb(239, 239, 168);
+  transform: rotate(-15deg);
+}
+.Task3 {
+  background-color: rgb(100, 195, 224);
+  transform: rotate(10deg);
+}
+
+section:hover {
+  transform: scale(1.5, 1.5);
+  z-index: 3;
 }
